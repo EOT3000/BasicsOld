@@ -1,0 +1,62 @@
+name: Basics
+main: com.eot3000.BasicsPlugin
+version: 3.0
+depend: [Vault]
+commands:
+    heal:
+    killme:
+    killall:
+    walkspeed:
+    mute:
+    eco:
+permissions:
+    basics.*:
+        children:
+            basics.heal.*: true
+            basics.mute.*: true
+            basics.killme: true
+            basics.killall: true
+            basics.effects.*: true
+    basics.heal.*:
+        children:
+            basics.heal.me: true
+            basics.heal.other: true
+            basics.killme: true
+    basics.mute.*:
+        children:
+            basics.mute.all: true
+            basics.mute.un: true
+            basics.mute.one: true
+    basics.effects.*:
+        children:
+            basics.effects.walkspeed: true
+    basics.eco.*:
+        children:
+            basics.eco.give: true
+            basics.eco.take: true
+            basics.eco.show: true
+            basics.eco.show.other: true
+    basics.effects.walkspeed:
+        default: op
+    basics.killme:
+        default: true
+    basics.killall:
+        default: op
+    basics.mute.all:
+        default: op
+    basics.mute.un:
+        default: op
+    basics.mute.one:
+        default: op
+    basics.mute.heal.other:
+        default: op
+    basics.mute.heal.me:
+        default: op
+    basics.eco.give:
+        default: op
+    basics.eco.give:
+        default: op
+    basics.eco.show:
+        default: true
+    basics.eco.show.other:
+        default: true

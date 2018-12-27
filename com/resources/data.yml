@@ -1,0 +1,14 @@
+users:
+  #Uuid
+  1111-1111-1111-1111:
+    balance:
+      100000
+    banks:
+      a
+banks:
+  a:
+    balance:
+      100
+
+
+
